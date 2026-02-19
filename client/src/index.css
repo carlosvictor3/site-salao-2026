@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,16 +7,16 @@
   --font-display: 'Cormorant Garamond', serif;
   --font-sans: 'Montserrat', sans-serif;
 
-  --background: 252 100% 99%;
-  --foreground: 340 25% 15%;
+  --background: 0 0% 15%;
+  --foreground: 0 0% 95%;
   --card: 0 0% 100%;
   --card-foreground: 340 25% 15%;
   --card-border: 340 15% 92%;
   --popover: 0 0% 100%;
   --popover-foreground: 340 25% 15%;
   --popover-border: 340 15% 92%;
-  --primary: 340 85% 70%;
-  --primary-foreground: 0 0% 100%;
+  --primary: 45 70% 55%;
+  --primary-foreground: 0 0% 10%;
   --secondary: 25 85% 95%;
   --secondary-foreground: 340 25% 15%;
   --muted: 340 20% 96%;
@@ -54,7 +53,12 @@
     font-family: var(--font-sans);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     @apply font-bold tracking-tight;
   }
@@ -78,12 +82,10 @@
 
 @layer utilities {
   .shimmer {
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.3),
-      transparent
-    );
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent);
     animation: shimmer 2s infinite;
   }
 
@@ -91,6 +93,7 @@
     0% {
       transform: translateX(-100%);
     }
+
     100% {
       transform: translateX(100%);
     }
@@ -105,6 +108,7 @@
       opacity: 0;
       transform: translateY(20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -120,6 +124,7 @@
       opacity: 0;
       transform: translateX(30px);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);

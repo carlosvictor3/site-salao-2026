@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Sparkles, Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
+import logo from "../../public/logo.png"
 
 export function Footer() {
   return (
@@ -8,9 +9,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <Sparkles className="h-6 w-6 text-primary" />
+              <img
+                src={logo}
+                alt="Logo Studio Kalê"
+                className="h-6 w-6 object-contain"
+              />
               <span className="text-lg font-display font-bold gradient-text">
-                Beleza Radiante
+                Studio Kalê
               </span>
             </Link>
             <p className="text-sm text-muted-foreground">
@@ -44,15 +49,14 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>(11) 9999-9999</span>
+                <span>(21) 98199-3352</span>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-primary" />
-                <span>contato@belezaradiante.com</span>
+
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>São Paulo, SP</span>
+                <span>Rio de Janeiro, RJ</span>
               </li>
             </ul>
           </div>
@@ -61,7 +65,7 @@ export function Footer() {
             <h3 className="font-display font-semibold mb-4">Redes Sociais</h3>
             <div className="flex gap-3">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/kalemapband"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary text-primary hover:text-primary-foreground flex items-center justify-center transition-all"
@@ -81,7 +85,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>© 2024 Beleza Radiante. Todos os direitos reservados.</p>
+          <p>© Studio Kalê. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

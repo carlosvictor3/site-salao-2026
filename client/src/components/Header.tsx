@@ -4,6 +4,7 @@ import { useCart } from "@/hooks/use-cart";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logo from "../../public/logo.png"
 
 export function Header() {
   const { itemCount } = useCart();
@@ -21,11 +22,15 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group">
             <div className="relative">
-              <Sparkles className="h-7 w-7 text-primary transition-transform group-hover:scale-110" />
-              <div className="absolute inset-0 blur-md bg-primary/20 rounded-full group-hover:bg-primary/30 transition-all" />
+              <img
+                src={logo}
+                alt="Logo Studio Kalê"
+                className="h-8 w-8 object-contain transition-transform group-hover:scale-110"
+              />
             </div>
+
             <span className="text-xl md:text-2xl font-display font-bold gradient-text">
-              Beleza Radiante
+              STUDIO KALÊ
             </span>
           </Link>
 

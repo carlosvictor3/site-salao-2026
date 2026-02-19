@@ -30,14 +30,13 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center space-y-6 fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary border border-primary/20">
               <Sparkles className="h-4 w-4" />
-              <span className="text-sm font-medium">Agendamento Online</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold">
               Sua beleza,
               <span className="gradient-text"> nossa arte</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Descubra os melhores tratamentos de beleza e bem-estar. Profissionais qualificados prontos para transformar seu visual.
+              Veja nosso catalogo de serviços e promoções, compre agora mesmo sem sair de casa e agende seu horário.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button asChild size="lg" className="shadow-xl hover:shadow-2xl transition-all">
@@ -89,7 +88,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-2">Agendamento Fácil</h3>
                 <p className="text-muted-foreground">
-                  Reserve seus serviços online com praticidade e comodidade
+                  Após a compra entre em contato pelo Whatsapp e agende seu horário
                 </p>
               </CardContent>
             </Card>
@@ -183,23 +182,6 @@ export default function Home() {
               </div>
             </>
           )}
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary via-primary/90 to-accent text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Pronta para se sentir incrível?
-          </h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Agende seu horário agora e descubra o poder de uma transformação completa
-          </p>
-          <Button asChild size="lg" variant="secondary" className="shadow-2xl hover:shadow-3xl transition-all">
-            <Link href="/services">
-              Começar Agora
-            </Link>
-          </Button>
         </div>
       </section>
 
