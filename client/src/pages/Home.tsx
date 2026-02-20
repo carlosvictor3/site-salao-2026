@@ -77,7 +77,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-2">Produtos Premium</h3>
                 <p className="text-muted-foreground">
-                  Trabalhamos apenas com marcas de alta qualidade e reconhecidas
+                  Trabalhamos com marcas de alta qualidade e reconhecidas
                 </p>
               </CardContent>
             </Card>

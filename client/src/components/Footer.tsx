@@ -15,10 +15,10 @@ export function Footer() {
                 className="h-6 w-6 object-contain"
               />
               <span className="text-lg font-display font-bold gradient-text">
-                Studio Kalê
+                STUDIO KALÊ
               </span>
             </Link>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-footer">
               Transformando beleza em arte há mais de 10 anos.
             </p>
           </div>
@@ -27,17 +27,17 @@ export function Footer() {
             <h3 className="font-display font-semibold mb-4">Navegação</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/" className="text-muted-footer hover:text-primary transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/services" className="text-muted-footer hover:text-primary transition-colors">
                   Serviços
                 </Link>
               </li>
               <li>
-                <Link href="/promotions" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/promotions" className="text-muted-footer hover:text-primary transition-colors">
                   Promoções
                 </Link>
               </li>
@@ -46,7 +46,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-display font-semibold mb-4">Contato</h3>
-            <ul className="space-y-3 text-sm text-muted-foreground">
+            <ul className="space-y-3 text-sm text-muted-footer">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
                 <span>(21) 98199-3352</span>
@@ -84,7 +84,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
+        <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-footer">
           <p>© Studio Kalê. Todos os direitos reservados.</p>
         </div>
       </div>

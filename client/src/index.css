@@ -10,17 +10,23 @@
   --background: 0 0% 15%;
   --foreground: 0 0% 95%;
   --card: 0 0% 100%;
+  /* cor do card, vale a pena ver opções */
   --card-foreground: 340 25% 15%;
   --card-border: 340 15% 92%;
   --popover: 0 0% 100%;
   --popover-foreground: 340 25% 15%;
   --popover-border: 340 15% 92%;
   --primary: 45 70% 55%;
+  /* altera cor da nuance na pag home */
   --primary-foreground: 0 0% 10%;
   --secondary: 25 85% 95%;
   --secondary-foreground: 340 25% 15%;
-  --muted: 340 20% 96%;
-  --muted-foreground: 340 15% 45%;
+  --muted: 340 20% 100%;
+  /* cores de sections que variam com o preto */
+  --muted-foreground: 33 46% 25%;
+  /* cor de algumas letras, footer e outros subtitulos */
+  --muted-footer: 33 46% 85%;
+  /*cores apenas de opções do footer */
   --accent: 45 95% 75%;
   --accent-foreground: 340 25% 15%;
   --destructive: 0 84% 60%;
@@ -61,6 +67,7 @@
   h6 {
     font-family: var(--font-display);
     @apply font-bold tracking-tight;
+
   }
 
   h1 {
@@ -78,7 +85,9 @@
   h4 {
     @apply text-xl md:text-2xl;
   }
+
 }
+
 
 @layer utilities {
   .shimmer {
